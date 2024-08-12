@@ -1,0 +1,98 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eaeaea;
+  color: #333;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-title {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-title:hover {
+  background-color: #00449e;
+}
+
+.accordion-title:focus {
+  background-color: #00449e;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.accordion-title:after {
+  content: "➤";
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-title[aria-expanded="true"]:after {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  padding: 20px;
+  display: none;
+  font-size: 18px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-content.show {
+  display: block;
+}
+
+.style-switcher {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.style-switcher button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.style-switcher button:hover {
+  background-color: #00449e;
+}
+
+.style-switcher button:focus {
+  background-color: #00449e;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  outline: none;
+}

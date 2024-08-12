@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accessible Accordion</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link id="theme-stylesheet" rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="style-switcher">
+      <button id="switch-to-modern">Switch to Modern Style</button>
+      <button id="switch-to-default">Switch to Default Style</button>
+    </div>
+
     <div id="accordion" class="accordion"></div>
+
     <script src="script.js"></script>
+    <script>
+      document
+        .getElementById("switch-to-modern")
+        .addEventListener("click", function () {
+          document
+            .getElementById("theme-stylesheet")
+            .setAttribute("href", "modern-styles.css");
+        });
+
+      document
+        .getElementById("switch-to-default")
+        .addEventListener("click", function () {
+          document
+            .getElementById("theme-stylesheet")
+            .setAttribute("href", "styles.css");
+        });
+    </script>
   </body>
 </html>

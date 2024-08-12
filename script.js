@@ -2,19 +2,23 @@
 const accordionData = [
   {
     title: "Section 1",
-    content: "This is the content for section 1.",
+    content:
+      "</p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
   },
   {
     title: "Section 2",
-    content: "This is the content for section 2.",
+    content:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
   },
   {
     title: "Section 3",
-    content: "This is the content for section 3.",
+    content:
+      "<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p><p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>",
   },
   {
     title: "Section 4",
-    content: "This is the content for section 4.",
+    content:
+      "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   },
 ];
 
